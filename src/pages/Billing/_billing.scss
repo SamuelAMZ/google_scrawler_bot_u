@@ -1,0 +1,28 @@
+@import "../../styles/global/variables";
+
+.billings {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+
+  .billing-elm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h3 {
+      font-size: 17px;
+      color: $second;
+      text-transform: capitalize;
+    }
+
+    .quick-links-dashboard {
+      margin-top: 0;
+      .link-jd.top {
+        border-bottom: 2px solid $accent;
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+@use "../../styles/global/breakpoints" as b;
+@import "../../styles/global/variables";
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+
+  @include b.breakpoint("1000") {
+    grid-template-columns: 2.5fr 1fr;
+  }
+
+  h2 {
+    font-size: 17px;
+    color: $second;
+    text-transform: capitalize;
+  }
+
+  .desc {
+    font-size: 15px !important;
+  }
+  .desc.first-descs {
+    text-transform: capitalize;
+  }
+
+  .section-features {
+    h3 {
+      font-weight: 500;
+    }
+  }
+}
+
+.home-page {
+  h1 {
+    font-size: 25px;
+
+    span {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.stats-container-jd {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @include b.breakpoint("1000") {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-jd {
+    background-color: $white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #8b8b8b35;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    font-size: 50px;
+    gap: 0.5rem;
+
+    @include b.breakpoint("768") {
+      grid-template-columns: 1fr 3fr;
+    }
+
+    div {
+      font-size: 15px;
+      color: $second;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .desc {
+        font-size: 17px;
+        color: $dash;
+      }
+    }
+  }
+}
+
+.loaderAnalytics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.second-section {
+  margin-top: 35px !important;
+  button {
+    margin-top: 1rem;
+  }
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .section-jd {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
+
+.section-features {
+  h3 {
+    margin-bottom: 3px;
+    text-transform: capitalize;
+  }
+  li {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px !important;
+    color: #95a6e7;
+
+    p {
+      color: $second;
+      font-weight: 500;
+      line-height: 1.8;
+      font-size: 13.5px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.quick-jd {
+  .stat-jd {
+    border-bottom: 2px solid $accent !important;
+  }
+}
+
+.overview-jd {
+  .stat-jd {
+    border: 2px solid #e7e7e7;
+    &:first-child {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #5e5d78;
+
+      background: rgb(216, 223, 255);
+      background: linear-gradient(
+        331deg,
+        rgba(216, 223, 255, 1) 0%,
+        rgba(216, 223, 255, 1) 24%,
+        rgba(233, 237, 255, 1) 41%,
+        rgba(238, 241, 255, 1) 65%,
+        rgba(246, 247, 255, 1) 85%,
+        rgba(255, 255, 255, 1) 100%
+      );
+
+      svg {
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.overlay-jd {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-position: bottom-left;
+  background-size: cover;
+  opacity: 0.7;
+}
+.text-jd {
+  z-index: 2;
+}
+
+.chat-block {
+  cursor: pointer;
+}

@@ -1,0 +1,61 @@
+//imports
+@use "../../styles/global/breakpoints" as b;
+@import "../../styles/global/variables";
+
+.header-container {
+  margin: 0 auto;
+
+  background-color: #385dff;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 1.5rem;
+  border-radius: 0 0 15px 15px;
+  border-top: 0;
+
+  .header-elm {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: $white;
+    width: 90%;
+
+    @include b.breakpoint("1440") {
+      width: 1080px;
+    }
+    @include b.breakpoint("1680") {
+      width: 1280px;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  button {
+    background-color: $dash;
+    display: none;
+
+    @include b.breakpoint("1280") {
+      display: block;
+    }
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    font-size: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    cursor: pointer;
+
+    @include b.breakpoint("1280") {
+      display: none;
+    }
+  }
+}

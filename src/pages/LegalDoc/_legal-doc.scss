@@ -1,0 +1,95 @@
+//imports
+@import "../../styles/global/variables";
+
+.legal-wraper {
+  .centerer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    p.heading {
+      font-size: 18px;
+      color: $dash;
+      text-transform: capitalize;
+    }
+    p.head {
+      font-size: 15px;
+      color: $second;
+      margin-bottom: 0.7rem;
+    }
+
+    .quick-links-dashboard {
+      margin-top: 0;
+
+      .link-jd {
+        a {
+          color: $accent;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .status-widget {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        li {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          align-items: center;
+
+          div {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+          }
+        }
+
+        .done {
+          svg {
+            color: green;
+          }
+
+          div {
+            p {
+              &:nth-child(2) {
+                color: rgba(0, 122, 0, 0.691);
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .notdone {
+          svg {
+            color: red;
+          }
+
+          div {
+            p {
+              &:nth-child(2) {
+                color: rgba(255, 0, 0, 0.824);
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#imageupload {
+  display: none;
+}
+.unpload-text {
+  color: $accent;
+  cursor: pointer;
+}
+.unpload-text.green {
+  color: green !important;
+}

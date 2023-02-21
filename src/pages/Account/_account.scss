@@ -1,0 +1,144 @@
+//imports
+@use "../../styles/global/breakpoints" as b;
+@import "../../styles/global/variables";
+
+.menu-tab-parent {
+  background-color: white;
+  padding: 0;
+  border-radius: 15px;
+
+  @include b.breakpoint("768") {
+    padding: 0 1rem;
+  }
+
+  .tab-bordered {
+    height: 4rem;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+
+  .tab-active {
+    border-color: $accent;
+    color: $accent;
+  }
+}
+
+.account {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @include b.breakpoint("1000") {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.account-details {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 2rem;
+  height: fit-content;
+  border: 2px solid #8b8b8b35;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: $dash;
+      line-height: 1;
+    }
+
+    li {
+      font-size: 15px;
+      color: $second;
+
+      span {
+        color: $dash;
+      }
+    }
+  }
+}
+
+.your-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 2rem 0;
+
+  .change {
+    width: 500px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}
+
+.quick-links-dashboard {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @include b.breakpoint("1000") {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .link-jd {
+    background-color: $white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #8b8b8b35;
+    height: 100%;
+    border-bottom: 2px solid $accent !important;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    font-size: 50px;
+    // gap: 0.5rem;
+
+    @include b.breakpoint("768") {
+      gap: 0;
+      grid-template-columns: 1fr 3fr;
+    }
+
+    div {
+      font-size: 17px;
+      color: $dash;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-transform: capitalize;
+
+      .desc {
+        font-size: 13.5px;
+        color: $second;
+      }
+    }
+  }
+}
