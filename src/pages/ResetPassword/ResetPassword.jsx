@@ -67,7 +67,7 @@ const ResetPassword = () => {
         <div className="heading">
           {/* logo */}
           <a
-            href="https://takedownly.netlify.app/"
+            href="https://takedownly.com"
             target="_blank"
             rel="noopener noreferrer"
           >

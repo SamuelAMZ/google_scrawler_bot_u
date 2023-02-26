@@ -150,7 +150,7 @@ const Login = () => {
         <div className="heading">
           {/* logo */}
           <a
-            href="https://takedownly.netlify.app/"
+            href="https://takedownly.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -215,7 +215,7 @@ const Login = () => {
             <Link to={"/forgot-password"}>Forgot Password?</Link>
           </div>
           <a
-            href="https://takedownly.netlify.app/privacy-and-cookie-policy"
+            href="https://takedownly.comprivacy-and-cookie-policy"
             target="_blank"
           >
             Privacy Policy

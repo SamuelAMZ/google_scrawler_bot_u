@@ -22,7 +22,8 @@ const Sidebar = () => {
       location.pathname === "/" ||
       location.pathname.includes("/404") ||
       location.pathname.includes("/register") ||
-      location.pathname === "/forgot-password"
+      location.pathname.includes("/reset-pass") ||
+      location.pathname.includes("/forgot-password")
     ) {
       setAllowed(false);
     } else {
