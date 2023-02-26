@@ -22,13 +22,16 @@ const Sidebar = () => {
       location.pathname === "/" ||
       location.pathname.includes("/404") ||
       location.pathname.includes("/register") ||
-      location.pathname.includes("/reset-pass") ||
-      location.pathname.includes("/forgot-password")
+      location.pathname.includes("/forgot-password") ||
+      location.pathname.split("/")[1].includes("reset-pass")
     ) {
       setAllowed(false);
     } else {
       setAllowed(true);
     }
+
+    console.log(location.pathname);
+    console.log(location.pathname.split("/"));
   }, [location.pathname]);
 
   return (

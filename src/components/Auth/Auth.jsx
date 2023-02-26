@@ -68,7 +68,8 @@ const Auth = () => {
         if (
           data.user === null &&
           location.pathname !== "/register" &&
-          location.pathname !== "/forgot-password"
+          location.pathname !== "/forgot-password" &&
+          !location.pathname.split("/")[1].includes("reset-pass")
         ) {
           changeLogin(null);
           // stop loading
