@@ -131,7 +131,7 @@ const Pricing = () => {
                     className="btn btn-primary"
                     onClick={() =>
                       handleCheckout({
-                        price: "price_1Mdtv7JDj7UFNjnGu3aPU1lP",
+                        price: "price_1Mfi7GJDj7UFNjnGaIOufwmK",
                         plan: "beginner",
                         recuringType: "quaterly",
                         features:
@@ -148,7 +148,7 @@ const Pricing = () => {
                     className="btn btn-primary"
                     onClick={() =>
                       handleCheckout({
-                        price: "price_1Mdtv7JDj7UFNjnGW8MiIPVe",
+                        price: "price_1Mfi7GJDj7UFNjnGl4F4dezt",
                         plan: "beginner",
                         recuringType: "monthly",
                         features:
@@ -218,7 +218,7 @@ const Pricing = () => {
                     className="btn btn-primary"
                     onClick={() =>
                       handleCheckout({
-                        price: "price_1MdyjIJDj7UFNjnGtYFXZ2Ce",
+                        price: "price_1Mfi7QJDj7UFNjnGdRxtMbIZ",
                         plan: "start",
                         recuringType: "quaterly",
                         features:
@@ -235,7 +235,7 @@ const Pricing = () => {
                     className="btn btn-primary"
                     onClick={() =>
                       handleCheckout({
-                        price: "price_1MdyjIJDj7UFNjnGQsPhDXYi",
+                        price: "price_1Mfi7QJDj7UFNjnGnOEVaSDk",
                         plan: "start",
                         recuringType: "monthly",
                         features:
@@ -297,7 +297,7 @@ const Pricing = () => {
                     className="btn btn-primary"
                     onClick={() =>
                       handleCheckout({
-                        price: "price_1Mdym9JDj7UFNjnGPMvioQxP",
+                        price: "price_1Mfi7aJDj7UFNjnGcRBXh8js",
                         plan: "pro",
                         recuringType: "quaterly",
                         features:
@@ -314,7 +314,7 @@ const Pricing = () => {
                     className="btn btn-primary"
                     onClick={() =>
                       handleCheckout({
-                        price: "price_1Mdym9JDj7UFNjnGA0bNCSAo",
+                        price: "price_1Mfi7aJDj7UFNjnGjyiLpdMr",
                         plan: "pro",
                         recuringType: "monthly",
                         features:
