@@ -34,8 +34,7 @@ const Logout = () => {
         notif(serverMessage.message);
 
         if (serverMessage.code === "ok") {
-          window.location.reload(false);
-          navigate("/");
+          window.location.replace("https://takedownly.com");
         }
       } catch (err) {
         notif("server error try again later");
